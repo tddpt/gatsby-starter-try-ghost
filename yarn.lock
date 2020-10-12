@@ -7012,6 +7012,20 @@ gatsby-rehype-ghost-links@^1.6.1:
     lodash "^4.17.20"
     unist-util-visit "^2.0.3"
 
+gatsby-rehype-inline-images@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/gatsby-rehype-inline-images/-/gatsby-rehype-inline-images-1.7.2.tgz#31922d2c480c58fbddc32c36771a5fa22572f9a7"
+  integrity sha512-WpdwnFhbbyHBe5I+9VNObVnLZMJwZGmqjOoFQPCKUVqqz/1+4rZbXMVzshzZpF2UCzDdQ3MABcN8zvz4gl9E3Q==
+  dependencies:
+    "@babel/runtime" "7.11.2"
+    fs-extra "^9.0.1"
+    gatsby-plugin-sharp "^2.6.38"
+    gatsby-source-filesystem "^2.3.32"
+    lodash "^4.17.20"
+    path "^0.12.7"
+    sharp "0.25.4"
+    unist-util-visit-parents "^3.1.0"
+
 gatsby-rehype-prismjs@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/gatsby-rehype-prismjs/-/gatsby-rehype-prismjs-1.2.1.tgz#0ec244c253fca2b87524bf0bdaae19c10dc1e71a"
@@ -7069,14 +7083,6 @@ gatsby-theme-ghost-dark-mode@^1.6.1:
   integrity sha512-N7oo2gR/jL3bpTZns5LxSP5ibgCUF6AXjdifaftupJDZ9hrdadTPleN+sKdpZQ0Fpg6koLjYQ6Ngv32r34aumw==
   dependencies:
     "@babel/runtime" "^7.11.2"
-
-gatsby-theme-ghost-members@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-ghost-members/-/gatsby-theme-ghost-members-1.4.1.tgz#8e074a497b796e92fb1cec6101ad21146992ea77"
-  integrity sha512-P7N3DIlZg+gRhRTZbJP3wk32Wvj7+CENVE9c16fzgqEPNhNcxCQmiBfe0rC2lVbjXaWGolleYl0CyQ6Cl67kQQ==
-  dependencies:
-    "@babel/runtime" "^7.11.2"
-    styled-components "^5.2.0"
 
 gatsby-theme-try-ghost@^1.45.5:
   version "1.45.5"
@@ -11249,6 +11255,14 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
+path@^0.12.7:
+  version "0.12.7"
+  resolved "https://registry.yarnpkg.com/path/-/path-0.12.7.tgz#d4dc2a506c4ce2197eb481ebfcd5b36c0140b10f"
+  integrity sha1-1NwqUGxM4hl+tIHr/NWzbAFAsQ8=
+  dependencies:
+    process "^0.11.1"
+    util "^0.10.3"
+
 pbkdf2@^3.0.3:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/pbkdf2/-/pbkdf2-3.1.1.tgz#cb8724b0fada984596856d1a6ebafd3584654b94"
@@ -11916,7 +11930,7 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-process@^0.11.10:
+process@^0.11.1, process@^0.11.10:
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
@@ -13309,7 +13323,7 @@ shallowequal@^1.1.0:
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-1.1.0.tgz#188d521de95b9087404fd4dcb68b13df0ae4e7f8"
   integrity sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==
 
-sharp@^0.25.4:
+sharp@0.25.4, sharp@^0.25.4:
   version "0.25.4"
   resolved "https://registry.yarnpkg.com/sharp/-/sharp-0.25.4.tgz#1a8e542144a07ab7e9316ab89de80182b827c363"
   integrity sha512-umSzJJ1oBwIOfwFFt/fJ7JgCva9FvrEU2cbbm7u/3hSDZhXvkME8WE5qpaJqLIe2Har5msF5UG4CzYlEg5o3BQ==
@@ -15042,6 +15056,13 @@ util@0.10.3:
   integrity sha1-evsa/lCAUkZInj23/g7TeTNqwPk=
   dependencies:
     inherits "2.0.1"
+
+util@^0.10.3:
+  version "0.10.4"
+  resolved "https://registry.yarnpkg.com/util/-/util-0.10.4.tgz#3aa0125bfe668a4672de58857d3ace27ecb76901"
+  integrity sha512-0Pm9hTQ3se5ll1XihRic3FDIku70C+iHUdT/W926rSgHV5QgXsYbKZN8MSC3tJtSkhuROzvsQjAaFENRXr+19A==
+  dependencies:
+    inherits "2.0.3"
 
 util@^0.11.0:
   version "0.11.1"
